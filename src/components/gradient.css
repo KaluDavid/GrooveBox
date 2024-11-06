@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .logo-gradient {
+    background: linear-gradient(
+      90.07deg,
+      #ee10b0 -4.82%,
+      rgba(14, 158, 239, 0.92) 127.01%
+    );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  .welcome-gradient {
+    background: radial-gradient(
+      160% 160% at 50% 24.29%,
+      #f9f4ed 0%,
+      rgba(238, 231, 220, 0) 100%
+    );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+
+  .shad {
+    box-shadow: 8px 0px 24.2px 0px #ee10b026;
+  }
+
+  .login {
+    box-shadow: 0px 0.6px 4.6px 0px #00000040;
+  }
+}
