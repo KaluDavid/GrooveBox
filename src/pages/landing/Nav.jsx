@@ -7,11 +7,11 @@ export default function Nav() {
     return (
         <div className='flex items-center justify-between w-full'>
             <Logo />
-            <div className="flex items-center gap-[12px]">
-                <Button style="border-pink text-pink w-[10rem] rounded" linkTo="/Login">
+            <div className="flex items-center gap-[12px] ">
+                <Button style="border-pink text-pink w-[10pc] rounded" linkTo="/Login">
                     <span>Login</span>
                 </Button>
-                <Button style="border-pink text-white w-[10rem] bg-pink rounded" linkTo="/signUp">
+                <Button style="border-pink text-white w-[10pc] bg-pink rounded" linkTo="/signUp">
                     <span>Sign Up</span>
                 </Button>
             </div>

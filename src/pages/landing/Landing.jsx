@@ -18,7 +18,7 @@ export function Landing() {
                             </p>
                         </div>
 
-                        <Button style="text-white bg-pink font-medium w-[15rem] border-pink shadow-landing text-xl py-[10px]" linkTo="/Login">Start Free Now </Button>
+                        <Button style="text-white bg-pink w-[10pc] border-pink shadow-landing font-medium pb-[6px]" linkTo="/Login">Start Free Now </Button>
                     </div>
                 </div>
             </div>

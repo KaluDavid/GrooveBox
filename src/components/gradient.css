@@ -29,4 +29,18 @@
   .login {
     box-shadow: 0px 0.6px 4.6px 0px #00000040;
   }
+
+  /* Album gradient */
+  .album {
+    background: linear-gradient(
+      90.22deg,
+      #1171e2 12.99%,
+      rgba(83, 173, 214, 0.0230101) 112.49%,
+      rgba(139, 203, 231, 0) 114.84%
+    );
+  }
+
+  .albumHero {
+    box-shadow: 3px 12px 4px 0px #0000004d;
+  }
 }

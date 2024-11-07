@@ -27,12 +27,12 @@ export function Login() {
                         <Input type="name" name="Name" input="text" />
                         <Input type="email" name="Email" input="email" />
                         <Input type="password" name="Password" input="password" />
-                        <div className="flex items-center flex-col gap-2 w-full mt-[10px]">
+                        <div className="flex items-center flex-col gap-2 w-full mt-[10px] *:w-full">
                             <Button style="border-pink text-white w-full bg-pink" linkTo="/">
                                 <span>Sign Up</span>
                             </Button>
-                            <p>Already have an account? <span className='text-pink'>login</span></p>
                         </div>
+                        <p>Already have an account? <span className='text-pink'>login</span></p>
                     </div>
                 </div>
             </form>

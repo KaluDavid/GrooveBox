@@ -9,10 +9,11 @@ import { Login } from './pages/auth/Login';
 import { SignUp } from './pages/auth/SignUp';
 import { RootLayout } from './layout/RootLayout';
 import { Home } from './pages/home/Home';
+import { Albums } from './pages/albums/Albums';
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    // index: true,
     element: <Landing />,
   },
   {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
       index: true,
       element: <Home />,
     },
+    {
+      path: '/album',
+      element: <Albums />,
+    }
     ]
   }
 ]);
