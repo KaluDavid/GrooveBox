@@ -1,5 +1,6 @@
 import React from 'react'
 import profile from '/icons/profile.svg'
+import { Link } from 'react-router-dom'
 
 export function Header({ children, style }) {
     return (
@@ -11,7 +12,7 @@ export function Header({ children, style }) {
             <ul className="flex justify-center items-center gap-[37px] font-Vazirmatn ">
                 <li>Contact Us</li>
                 <li>FAQ</li>
-                <img src={profile} alt='profile icon' className="w-[30px] h-[30px] object-contain" />
+                <Link to="/profile"> <img src={profile} alt='profile icon' className="w-[30px] h-[30px] object-contain" /></Link>
             </ul>
         </div>
     )

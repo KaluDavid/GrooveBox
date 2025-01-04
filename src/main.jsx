@@ -10,10 +10,11 @@ import { SignUp } from './pages/auth/SignUp';
 import { RootLayout } from './layout/RootLayout';
 import { Home } from './pages/home/Home';
 import { Albums } from './pages/albums/Albums';
+import Profile from './pages/profile/Profile';
 
 const router = createBrowserRouter([
   {
-    // index: true,
+    index: true,
     element: <Landing />,
   },
   {
@@ -28,12 +29,17 @@ const router = createBrowserRouter([
     path: '/',
     element: <RootLayout />,
     children: [{
-      index: true,
+      // index: true, 
+      path: "/home",
       element: <Home />,
     },
     {
       path: '/album',
       element: <Albums />,
+    },
+    {
+      path: '/profile',
+      element: <Profile />
     }
     ]
   }

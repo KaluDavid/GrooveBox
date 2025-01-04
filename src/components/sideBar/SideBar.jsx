@@ -9,6 +9,12 @@ import { IoHomeOutline } from "react-icons/io5";
 import { NavLink } from 'react-router-dom';
 
 export function SideBar() {
+
+    function handleLogout() {
+
+    }
+
+
     return (
         <div className=' flex flex-col gap-[24px] text-white font-medium left-11 fixed z-10 [&_small]:text-pink [&_small] [&_small]:text-[12px] [&_small]font-normal [&_span]:flex [&_span]:items-center [&_span]:gap-1 [&_div]:w-full '>
             <Logo />
@@ -25,7 +31,7 @@ export function SideBar() {
             </div>
             <div className="flex flex-col items-start gap-[24px] hove">
                 <small>General</small>
-              <NavLink to="/landing" >  <span><TbLogout />Logout</span></NavLink>
+                <NavLink to="/landing" >  <span onClick={handleLogout}><TbLogout />Logout</span></NavLink>
             </div>
         </div>
     )

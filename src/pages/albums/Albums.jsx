@@ -7,14 +7,16 @@ import nowPlaying from "/imgs/nowPlaying.png"
 import { IoMdPlay } from "react-icons/io";
 import { Trending } from '../../components/trending/Trending';
 import artist from "/imgs/artist.svg"
+import { useNavigate } from "react-router";
+
 
 export function Albums() {
+    const navigate = useNavigate();
     return (
-
-        <div className='font-Vazirmatn flex flex-col rounded-lg  mx-[20px]  mr-[30px] album '>
+        <div className='font-Vazirmatn flex flex-col rounded-lg  mx-[20px]  mr-[30px] album ' >
             <section className="w-full h-full albumHero flex gap-[50px] flex-col px-[20px] py-[22px] mb-[20px] rounded-b-xl pb-[40px]">
                 <Header>
-                    <span className='text-[33px] font-thin'><FaArrowLeft /></span>
+                    <span className='text-[33px] font-thin' onClick={() => navigate(-1)}><FaArrowLeft /></span>
                 </Header >
                 <div className=" w-full flex gap-[56px] text-left items-end justify-between ">
                     <div className="flex items-center gap-[20px]">
