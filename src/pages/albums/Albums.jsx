@@ -16,7 +16,7 @@ export function Albums() {
         <div className='font-Vazirmatn flex flex-col rounded-lg  mx-[20px]  mr-[30px] album ' >
             <section className="w-full h-full albumHero flex gap-[50px] flex-col px-[20px] py-[22px] mb-[20px] rounded-b-xl pb-[40px]">
                 <Header>
-                    <span className='text-[33px] font-thin' onClick={() => navigate(-1)}><FaArrowLeft /></span>
+                    <span className='text-[33px] font-thin cursor-pointer' onClick={() => navigate(-1)}><FaArrowLeft /></span>
                 </Header >
                 <div className=" w-full flex gap-[56px] text-left items-end justify-between ">
                     <div className="flex items-center gap-[20px]">
