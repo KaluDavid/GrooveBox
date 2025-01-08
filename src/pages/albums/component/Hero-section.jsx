@@ -37,4 +37,4 @@ export function Hero_section() {
             </div>
         </section>)
 }
-// ['CSS', 'Javascript', 'UI design', 'Figma', 'Product managament', 'Node JS', 'React']
+//
