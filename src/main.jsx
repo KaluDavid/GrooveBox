@@ -11,6 +11,8 @@ import { RootLayout } from './layout/RootLayout';
 import { Home } from './pages/home/Home';
 import { Albums } from './pages/albums/Albums';
 import Profile from './pages/profile/Profile';
+import YourFavorite from './pages/favorite/YourFavorite';
+import { ErrorPage } from './pages/errorPage/ErrorPage';
 
 const router = createBrowserRouter([
   {
@@ -40,6 +42,15 @@ const router = createBrowserRouter([
     {
       path: '/profile',
       element: <Profile />
+    },
+    {
+      path: '/favorite',
+      element: <YourFavorite />
+    },
+    {
+      path: '*',
+      element: <ErrorPage />
+
     }
     ]
   }

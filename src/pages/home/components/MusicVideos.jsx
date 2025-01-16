@@ -1,6 +1,8 @@
 import React from 'react'
+import { SlideMusic } from '../../../components/slideMusic/SlideMusic'
+import adele from '/imgs/adele.svg'
 
-export function NewReleased() {
+export function MusicVideos() {
     return (
         <section className='flex text-left flex-col gap-2 w-full'>
             <h1 className='font-bold text-[30px] leading-[50px] [&_span]:text-pink  '>

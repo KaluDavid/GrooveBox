@@ -1,6 +1,10 @@
 import React from 'react'
+import { Header } from '../../../components/Header'
+import { Button } from '../../../components/Button'
+import { ImSearch } from 'react-icons/im'
 
 export default function Hero() {
+
     return (
         <section className="relative w-full h-screen bg-[url('./imgs/homeHero.svg')] bg-no-repeat bg-cover bg-center rounded-[25px] py-[22px] px-[35px]">
             <div className="absolute inset-0 rounded-[25px] bg-[black] opacity-20"></div>

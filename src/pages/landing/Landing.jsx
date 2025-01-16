@@ -23,7 +23,7 @@ export function Landing() {
 
         return function () {
             document.title = "Welcome"
-            window.location.href = '/home'
+            // window.location.href = '/home'
 
         }
     }, [])
@@ -31,10 +31,9 @@ export function Landing() {
 
     return (
         <>
-
-            <div className="relative py-6 px-10 flex items-center flex-col bg-[url('./istockphoto-185406129-612x612.jpg')] bg-no-repeat bg-cover bg-center w-full h-full">
+            <div className="relative  overflow-hidden py-6 px-10 flex items-center justify-center flex-col bg-[url('./istockphoto-185406129-612x612.jpg')] bg-no-repeat bg-cover bg-center w-full h-screen">
                 <div className="absolute inset-0 bg-[black] opacity-70"></div>
-                <div className="relative flex items-center justify-center gap-[95px] flex-col w-full">
+                <div className="  relative flex items-center justify-center gap-[50px] flex-col w-full">
                     <Nav />
                     <div className="flex flex-col gap-[35px] items-center justify-center text-center">
                         <div className="flex flex-col gap-[16px] items-center justify-center ">
@@ -46,7 +45,8 @@ export function Landing() {
                             </p>
                         </div>
                         <a href={`${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=${RESPONSE_TYPE}`} className="text-white text-[30px] font-medium">Login to Spotify</a>
-                        <Button style="text-white bg-pink w-[10pc] border-pink shadow-landing font-medium pb-[6px]" linkTo="/Login">Start Free Now </Button>
+
+                        <Button style="text-white bg-pink w-[10pc] border-pink shadow-landing font-medium pb-[6px]" linkTo="/signUp">Start Free Now </Button>
                     </div>
                 </div>
             </div>

@@ -4,8 +4,10 @@ export default {
   theme: {
     fontFamily: {
       Vazirmatn: ["Vazirmatn", "sans-serif"],
+      Ojuju: ["Ojuju", "sans-serif"],
       Anton: ["Anton", "sans-serif"],
       poppins: ["Poppins", "sans-serif"],
+      Concert: ["Concert One", "serif"],
     },
     colors: {
       pink: "#EE10B0",
@@ -15,6 +17,7 @@ export default {
       bgColor: "#181818",
       darkGray: "#1F1F1F",
       grey: "#A7AAB5",
+      errorColor: "#D7D5E4",
     },
     boxShadow: {
       landing: "0px 20px 90px -12px #EE10B0",

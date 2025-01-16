@@ -4,7 +4,7 @@ import { FaArrowLeft } from "react-icons/fa6";
 import music from "/imgs/music.png"
 import { IoMdPlay } from "react-icons/io";
 import { useNavigate } from "react-router";
-
+import { Trend } from '../../../utils/Trend';
 export function Hero_section() {
     const navigate = useNavigate();
 
@@ -22,7 +22,7 @@ export function Hero_section() {
                         </h1>
                         <p>tate mcree, nightmares, the neighberhood, doja cat and ...</p>
                         <div className="flex gap-[20px] items-center">
-                            <span>20 songs</span> <b className='rounded-full p-1 bg-pink border-0'></b>
+                            <span>{Trend.length} songs</span> <b className='rounded-full p-1 bg-pink border-0'></b>
                             <span>1h 36m</span>
                         </div>
                     </div>
